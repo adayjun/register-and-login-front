@@ -39,8 +39,8 @@ export default {
     methods: {
       Login() {
         //console.log('submit!',this.loginForm);
-        this.axios.post('http://localhost:8081/sys-user/login',this.loginForm).then((resp)=>{
-         // this.axios.post('/api/sys-user/login',this.loginForm).then((resp)=>{
+       // this.axios.post('http://localhost:8081/sys-user/login',this.loginForm).then((resp)=>{
+      this.axios.post('/api/sys-user/login',this.loginForm).then((resp)=>{
           let data=resp.data;
           if(data.success){
             console.log(resp)

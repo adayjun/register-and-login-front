@@ -83,7 +83,9 @@ export default {
     },
     methods: {
       submitForm(formName) {
-        this.axios.post('http://127.0.0.1:8081/sys-user/register',this.ruleForm).then((resp)=>
+       // this.axios.post('http://127.0.0.1:8081/sys-user/register',this.ruleForm).then((resp)=>
+       this.axios.post('/api/sys-user/register',this.ruleForm).then((resp)=>
+
         {
           console.log(resp);
             let data=resp.data;

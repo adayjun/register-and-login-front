@@ -41,7 +41,9 @@
   export default {
     name:"HomeView",
     created(){
-      this.axios.post('http://127.0.0.1:8081/sys-user/ppp').then((resp)=>
+      // this.axios.post('http://127.0.0.1:8081/sys-user/ppp').then((resp)=>
+      //前端开全局代理
+      this.axios.post('/api/sys-user/ppp').then((resp)=>
         {
 
           let data=resp.data
